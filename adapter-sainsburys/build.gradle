@@ -1,0 +1,7 @@
+apply from: "$rootDir/java.gradle"
+
+dependencies {
+  compile project(":domain")
+
+  compile 'org.jsoup:jsoup:1.8.3'
+}
