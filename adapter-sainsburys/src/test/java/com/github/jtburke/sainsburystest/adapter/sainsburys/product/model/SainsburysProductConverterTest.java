@@ -34,8 +34,8 @@ public class SainsburysProductConverterTest {
     @Test
     public void whenConvert_shouldConvertCorrectly() {
         assertThat(converter.convert(sainsburysProducts)).isEqualTo(Arrays.asList(
-            new Product("a title", "a description", BigDecimal.valueOf(1.99), 12345),
-            new Product("b title", "b description", BigDecimal.valueOf(2.99), 67890)
+            new Product("a title", "a description", new BigDecimal("1.99"), 12345),
+            new Product("b title", "b description", new BigDecimal("2.99"), 67890)
         ));
     }
 }
