@@ -58,13 +58,13 @@ public class SainsburysProductAdapterIntegrationTest {
         List<Product> products = productAdapter.getProducts("http://localhost:8080/2015_Developer_Scrape/5_products.html");
 
         assertThat(products).isEqualTo(Arrays.asList(
-            new Product("Sainsbury's Apricot Ripe & Ready x5", "Apricots", new BigDecimal("3.50"), 35797),
-            new Product("Sainsbury's Avocado Ripe & Ready XL Loose 300g", "Avocados", new BigDecimal("1.50"), 36208),
-            new Product("Sainsbury's Avocado, Ripe & Ready x2", "Avocados", new BigDecimal("1.80"), 40807),
-            new Product("Sainsbury's Avocados, Ripe & Ready x4", "Avocados", new BigDecimal("3.20"), 36221),
-            new Product("Sainsbury's Conference Pears, Ripe & Ready x4 (minimum)", "Conference", new BigDecimal("1.50"), 36077),
-            new Product("Sainsbury's Golden Kiwi x4", "Gold Kiwi", new BigDecimal("1.80"), 36097),
-            new Product("Sainsbury's Kiwi Fruit, Ripe & Ready x4", "Kiwi", new BigDecimal("1.80"), 36522)
+            new Product("Sainsbury's Apricot Ripe & Ready x5", "Apricots", new BigDecimal("3.50"), 35643),
+            new Product("Sainsbury's Avocado Ripe & Ready XL Loose 300g", "Avocados", new BigDecimal("1.50"), 36054),
+            new Product("Sainsbury's Avocado, Ripe & Ready x2", "Avocados", new BigDecimal("1.80"), 40653),
+            new Product("Sainsbury's Avocados, Ripe & Ready x4", "Avocados", new BigDecimal("3.20"), 36067),
+            new Product("Sainsbury's Conference Pears, Ripe & Ready x4 (minimum)", "Conference", new BigDecimal("1.50"), 35923),
+            new Product("Sainsbury's Golden Kiwi x4", "Gold Kiwi", new BigDecimal("1.80"), 35943),
+            new Product("Sainsbury's Kiwi Fruit, Ripe & Ready x4", "Kiwi", new BigDecimal("1.80"), 36368)
         ));
     }
 }
