@@ -6,10 +6,9 @@ import com.github.jtburke.sainsburystest.adapter.sainsburys.product.JsoupSainsbu
 import com.github.jtburke.sainsburystest.adapter.sainsburys.product.SainsburysProductAdapter;
 import com.github.jtburke.sainsburystest.adapter.sainsburys.product.SainsburysProductScraper;
 import com.github.jtburke.sainsburystest.adapter.sainsburys.product.model.SainsburysProductConverter;
-import com.github.jtburke.sainsburystest.domain.service.ProductAdapter;
 
 public class SainsburysModule {
-    public ProductAdapter productAdapter() {
+    public SainsburysProductAdapter productAdapter() {
         return new SainsburysProductAdapter(scraper(), converter());
     }
 

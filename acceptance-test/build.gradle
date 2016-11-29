@@ -1,0 +1,8 @@
+apply from: "$rootDir/java.gradle"
+
+dependencies {
+  compile project(":domain")
+  compile project(":adapter-sainsburys")
+  compile project(":adapter-app")
+  testCompile 'org.skyscreamer:jsonassert:1.4.0'
+}

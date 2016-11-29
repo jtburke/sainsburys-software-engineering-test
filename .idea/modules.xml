@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/acceptance-test/acceptance-test.iml" filepath="$PROJECT_DIR$/.idea/modules/acceptance-test/acceptance-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter-app/adapter-app.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter-app/adapter-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter-sainsburys/adapter-sainsburys.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter-sainsburys/adapter-sainsburys.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/domain.iml" />

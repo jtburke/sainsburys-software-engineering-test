@@ -5,6 +5,11 @@ apply plugin: "com.github.johnrengelman.shadow"
 dependencies {
   compile project(":domain")
   compile project(":adapter-sainsburys")
+  compile 'com.fasterxml.jackson.core:jackson-core:2.8.5'
+  compile 'com.fasterxml.jackson.core:jackson-databind:2.8.5'
+  compile 'com.fasterxml.jackson.core:jackson-annotations:2.8.5'
+  testCompile 'com.github.tomakehurst:wiremock:2.4.1'
+  testCompile 'org.skyscreamer:jsonassert:1.4.0'
 }
 
 shadowJar {

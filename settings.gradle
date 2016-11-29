@@ -3,3 +3,5 @@ rootProject.name = "sainsburystest"
 include "domain"
 include "adapter-app"
 include "adapter-sainsburys"
+include "acceptance-test"
+
