@@ -4,7 +4,7 @@ import com.github.jtburke.sainsburystest.domain.service.ProductAdapter;
 import com.github.jtburke.sainsburystest.domain.service.ProductService;
 
 public class DomainModule {
-    private ProductAdapter productAdapter;
+    private final ProductAdapter productAdapter;
 
     public DomainModule(ProductAdapter productAdapter) {
         this.productAdapter = productAdapter;

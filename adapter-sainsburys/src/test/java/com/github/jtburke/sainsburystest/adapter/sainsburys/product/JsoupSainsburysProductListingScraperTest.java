@@ -18,10 +18,10 @@ import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
 
 public class JsoupSainsburysProductListingScraperTest {
-    @Mock
+    @Mock private
     JsoupSainsburysProductDetailsScraper detailsScraper;
 
-    JsoupSainsburysProductListingScraper listingScraper;
+    private JsoupSainsburysProductListingScraper listingScraper;
 
     @Before
     public void setUp() throws Exception {

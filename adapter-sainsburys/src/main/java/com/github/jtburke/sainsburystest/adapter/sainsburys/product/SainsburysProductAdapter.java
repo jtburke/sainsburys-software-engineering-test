@@ -7,16 +7,16 @@ import com.github.jtburke.sainsburystest.domain.service.ProductAdapter;
 import java.util.List;
 
 public class SainsburysProductAdapter implements ProductAdapter {
-    private final SainsburysProductScraper scraper;
+    private final SainsburysProductRepository repository;
     private final SainsburysProductConverter converter;
 
-    public SainsburysProductAdapter(SainsburysProductScraper scraper, SainsburysProductConverter converter) {
-        this.scraper = scraper;
+    public SainsburysProductAdapter(SainsburysProductRepository repository, SainsburysProductConverter converter) {
+        this.repository = repository;
         this.converter = converter;
     }
 
     @Override
     public List<Product> getProducts(String url) {
-        return converter.convert(scraper.scrapeProducts(url));
+        return converter.convert(repository.getProducts(url));
     }
 }

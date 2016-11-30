@@ -6,7 +6,6 @@ import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +16,6 @@ import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
 import java.io.IOException;
-import java.util.Collections;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
@@ -76,11 +74,5 @@ public class JsoupSainsburysProductDetailsScraperTest {
     public void whenIOException_shouldThrowRuntimeException() throws IOException {
         when(connection.get()).thenThrow(new IOException());
         detailsScraper.scrapeDetails(PRODUCT_DETAILS_URL);
-    }
-
-    private void mockTextNodeOnElement(Element element, String text) {
-        TextNode textNode = mock(TextNode.class);
-        when(element.textNodes()).thenReturn(Collections.singletonList(textNode));
-        when(textNode.text()).thenReturn(text);
     }
 }

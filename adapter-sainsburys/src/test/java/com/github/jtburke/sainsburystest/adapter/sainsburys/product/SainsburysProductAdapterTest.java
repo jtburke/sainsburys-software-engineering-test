@@ -16,16 +16,16 @@ import static org.mockito.MockitoAnnotations.initMocks;
 
 public class SainsburysProductAdapterTest {
     @Mock
-    SainsburysProductConverter converter;
+    private SainsburysProductConverter converter;
     @Mock
-    SainsburysProductScraper scraper;
+    private SainsburysProductRepository repository;
 
-    SainsburysProductAdapter repository;
+    private SainsburysProductAdapter adapter;
 
     @Before
     public void setUp() throws Exception {
         initMocks(this);
-        repository = new SainsburysProductAdapter(scraper, converter);
+        adapter = new SainsburysProductAdapter(repository, converter);
     }
 
     @Test
@@ -33,9 +33,9 @@ public class SainsburysProductAdapterTest {
         List<SainsburysProduct> scraped = new ArrayList<>();
         List<Product> converted = new ArrayList<>();
 
-        when(scraper.scrapeProducts("url")).thenReturn(scraped);
+        when(repository.getProducts("url")).thenReturn(scraped);
         when(converter.convert(scraped)).thenReturn(converted);
 
-        assertThat(repository.getProducts("url")).isEqualTo(converted);
+        assertThat(adapter.getProducts("url")).isEqualTo(converted);
     }
 }

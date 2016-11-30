@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/acceptance-test/acceptance-test.iml" filepath="$PROJECT_DIR$/.idea/modules/acceptance-test/acceptance-test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter-app/adapter-app.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter-app/adapter-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter-sainsburys/adapter-sainsburys.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter-sainsburys/adapter-sainsburys.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/acceptance-test/acceptance-test.iml" filepath="$PROJECT_DIR$/.idea/modules/acceptance-test/acceptance-test.iml" group="acceptance-test" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/acceptance-test/acceptance-test_main.iml" filepath="$PROJECT_DIR$/.idea/modules/acceptance-test/acceptance-test_main.iml" group="acceptance-test" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/acceptance-test/acceptance-test_test.iml" filepath="$PROJECT_DIR$/.idea/modules/acceptance-test/acceptance-test_test.iml" group="acceptance-test" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter-app/adapter-app.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter-app/adapter-app.iml" group="adapter-app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter-app/adapter-app_main.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter-app/adapter-app_main.iml" group="adapter-app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter-app/adapter-app_test.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter-app/adapter-app_test.iml" group="adapter-app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter-sainsburys/adapter-sainsburys.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter-sainsburys/adapter-sainsburys.iml" group="adapter-sainsburys" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter-sainsburys/adapter-sainsburys_main.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter-sainsburys/adapter-sainsburys_main.iml" group="adapter-sainsburys" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter-sainsburys/adapter-sainsburys_test.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter-sainsburys/adapter-sainsburys_test.iml" group="adapter-sainsburys" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/domain.iml" group="domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/domain_main.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/domain_main.iml" group="domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/domain_test.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/domain_test.iml" group="domain" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sainsburystest.iml" filepath="$PROJECT_DIR$/.idea/modules/sainsburystest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sainsburystest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sainsburystest_main.iml" group="sainsburystest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sainsburystest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sainsburystest_test.iml" group="sainsburystest" />
     </modules>
   </component>
 </project>

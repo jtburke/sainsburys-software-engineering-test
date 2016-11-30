@@ -4,6 +4,6 @@ import com.github.jtburke.sainsburystest.adapter.sainsburys.product.model.Sainsb
 
 import java.util.List;
 
-public interface SainsburysProductScraper {
-    List<SainsburysProduct> scrapeProducts(String url);
+public interface SainsburysProductRepository {
+    List<SainsburysProduct> getProducts(String url);
 }

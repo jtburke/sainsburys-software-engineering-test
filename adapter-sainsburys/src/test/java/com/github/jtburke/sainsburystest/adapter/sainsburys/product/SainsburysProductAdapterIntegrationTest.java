@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class SainsburysProductAdapterIntegrationTest {
     @ClassRule
-    public static WireMockRule wireMockStaticRule = new WireMockRule();
+    public static final WireMockRule wireMockStaticRule = new WireMockRule();
 
     @Rule
     public WireMockRule wireMockRule = wireMockStaticRule;

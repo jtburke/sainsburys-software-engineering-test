@@ -63,12 +63,12 @@ public class JsoupSainsburysProductScraperTest {
         when(listingScraper.scrapeListing(li1)).thenReturn(sainsburysProduct1);
         when(listingScraper.scrapeListing(li2)).thenReturn(sainsburysProduct2);
 
-        assertThat(productScraper.scrapeProducts(PRODUCT_LISTING_URL)).isEqualTo(Arrays.asList(sainsburysProduct1, sainsburysProduct2));
+        assertThat(productScraper.getProducts(PRODUCT_LISTING_URL)).isEqualTo(Arrays.asList(sainsburysProduct1, sainsburysProduct2));
     }
 
     @Test(expected = GetProductsException.class)
     public void whenIOException_shouldThrowRuntimeException() throws IOException {
         when(connection.get()).thenThrow(new IOException());
-        productScraper.scrapeProducts(PRODUCT_LISTING_URL);
+        productScraper.getProducts(PRODUCT_LISTING_URL);
     }
 }

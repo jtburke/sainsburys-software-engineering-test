@@ -9,7 +9,7 @@ import java.util.function.Consumer;
 
 public class JacksonProductRenderer implements ProductRenderer {
     private final ObjectMapper mapper;
-    private Consumer<String> output;
+    private final Consumer<String> output;
 
     public JacksonProductRenderer(Consumer<String> output) {
         this.output = output;

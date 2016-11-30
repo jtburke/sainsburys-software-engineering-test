@@ -5,7 +5,7 @@ import com.github.jtburke.sainsburystest.domain.DomainModule;
 
 import java.util.Scanner;
 
-public class ConsoleAppRunner {
+class ConsoleAppRunner {
     private static final String HORIZONTAL_RULE = "============================================================";
 
     public static void main(String[] args) throws Exception {

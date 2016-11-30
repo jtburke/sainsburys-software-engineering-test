@@ -5,7 +5,7 @@ import com.github.jtburke.sainsburystest.domain.model.product.Product;
 import java.util.List;
 
 public class ProductService {
-    private ProductAdapter adapter;
+    private final ProductAdapter adapter;
 
     public ProductService(ProductAdapter adapter) {
         this.adapter = adapter;

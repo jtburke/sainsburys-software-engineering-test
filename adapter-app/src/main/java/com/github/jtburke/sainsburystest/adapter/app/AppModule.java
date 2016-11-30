@@ -6,8 +6,8 @@ import com.github.jtburke.sainsburystest.domain.service.ProductService;
 import java.util.function.Consumer;
 
 public class AppModule {
-    private ProductService productService;
-    private Consumer<String> output;
+    private final ProductService productService;
+    private final Consumer<String> output;
 
     public AppModule(Consumer<String> output, ProductService productService) {
         this.productService = productService;
@@ -18,11 +18,11 @@ public class AppModule {
         return new ConsoleApp(productService, productRenderer(), productsResultConverter());
     }
 
-    ProductsResultConverter productsResultConverter() {
+    private ProductsResultConverter productsResultConverter() {
         return new ProductsResultConverter();
     }
 
-    ProductRenderer productRenderer() {
+    private ProductRenderer productRenderer() {
         return new JacksonProductRenderer(output);
     }
 }

@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class JsoupSainsburysProductScraper implements SainsburysProductScraper {
+public class JsoupSainsburysProductScraper implements SainsburysProductRepository {
     private final JsoupSainsburysProductListingScraper listingScraper;
 
     public JsoupSainsburysProductScraper(JsoupSainsburysProductListingScraper listingScraper) {
@@ -18,7 +18,7 @@ public class JsoupSainsburysProductScraper implements SainsburysProductScraper {
     }
 
     @Override
-    public List<SainsburysProduct> scrapeProducts(String url) {
+    public List<SainsburysProduct> getProducts(String url) {
         try {
             Document document = Jsoup.connect(url).get();
 

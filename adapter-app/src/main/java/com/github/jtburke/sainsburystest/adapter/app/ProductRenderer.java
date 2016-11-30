@@ -2,6 +2,6 @@ package com.github.jtburke.sainsburystest.adapter.app;
 
 import com.github.jtburke.sainsburystest.adapter.app.model.ProductsResult;
 
-public interface ProductRenderer {
+interface ProductRenderer {
     void render(ProductsResult products);
 }

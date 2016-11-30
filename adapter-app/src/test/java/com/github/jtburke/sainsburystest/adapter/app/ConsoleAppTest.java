@@ -17,13 +17,13 @@ import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
 
 public class ConsoleAppTest {
-    @Mock
+    @Mock private
     ProductService productService;
 
-    @Mock
+    @Mock private
     ProductRenderer productRenderer;
 
-    @Mock
+    @Mock private
     ProductsResultConverter converter;
     private ConsoleApp consoleApp;
 
